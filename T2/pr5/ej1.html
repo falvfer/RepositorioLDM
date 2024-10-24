@@ -10,43 +10,62 @@
 				background-color: rgb(155, 226, 185);
 			}
 
-			table,th,td {
-				border: 0.2em solid yellow;
+			table {
+				border: 0.25em solid yellow;
 				border-collapse: collapse;
-				padding: 0.3em;
+
 			}
-	
-			caption {
-				font-size: 1.5em;
-				font-weight: bold;
-				padding-bottom: 0.2em;
+
+			th {
+				color: blue;
+				padding: 0.5em;
+				border: 0.15em solid yellow;
 			}
+
+			td {
+				padding: 1em;
+				border: 0.15em solid yellow;
+			}
+
+			.television{
+				text-align: center;
+			}
+
+			table .col1 {
+				width: 10em;
+			}
+
+			table .col2 {
+				width: 15em;
+			}
+
 		</style>
 	</head>
 	<body>
-		
+
 		<table>
+			<col class="col1"><col class="col2">
 			<thead>
 				<tr>
-					<th>TELEVISION</th>
+					<th>TELEVISIÓN</th>
 					<th>PÁGINA WEB</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>La 1</td>
+					<td class="television">La 1</td>
 					<td><a href="https://www.rtve.es/">Ir a la 1</a></td>
 				</tr>
 				<tr>
-					<td>Telecinco</td>
+					<td class="television">Telecinco</td>
 					<td><a href="https://www.telecinco.es/">Ir a Telecinco</a></td>
 				</tr>
 				<tr>
-					<td>Antena 3</td>
+					<td class="television">Antena 3</td>
 					<td><a href="https://www.antena3.com/">Ir a Antena 3</a></td>
 				</tr>
 				<tr>
-					<td>La Sexta</td>
+					<td class="television">La Sexta</td>
 					<td><a href="https://www.lasexta.com/">Ir a la Sexta</a></td>
 				</tr>
 			</tbody>
