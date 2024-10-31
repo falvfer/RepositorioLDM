@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <meta name="description" content="Descripción">
+    <title>Titulo</title>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Legend</legend>
+            <label for="texto"><h3>Text</h3></label>
+            <input type="text" name="texto" id="texto" size="20" placeholder="Texto">
+    
+            <label for="pass"><h3>Password</h3></label>
+            <input type="password" name="pass" id="pass" maxlength="16" size="10">
+    
+            <label for="fil"><h3>File</h3></label>
+            <input type="file" name="fil" id="fil" accept=".png, .jpg">
+    
+            <label for="area"><h3>Textarea</h3></label>
+            <textarea name="area" id="area" cols="30" rows="4" placeholder="Texto"></textarea>
+    
+            <label for="rad"><h3>Radio</h3></label>
+            <input type="radio" name="rad" id="rad1" checked><label for="rad1">Radio1</label><br/>
+            <input type="radio" name="rad" id="rad2"><label for="rad2">Radio2</label>
+    
+            <label for="check"><h3>Checkbox</h3></label>
+            <input type="checkbox" name="check" id="check1" checked><label for="check1">Checkbox1</label><br/>
+            <input type="checkbox" name="check" id="check2"><label for="check2">Checkbox2</label>
+    
+            <label for="sel"><h3>Select</h3></label>
+            <select name="sel" id="sel">
+                <optgroup label="Grupo">
+                    <option value="Opt1">Opt1</option>
+                    <option value="Opt2">Opt2</option>
+                </optgroup>
+            </select>
+    
+            <label for="boton"><h3>Button</h3></label>
+            <input type="submit" name="boton" id="enviar" value="Enviar">
+            <input type="reset" name="boton" id="reiniciar" value="Reiniciar">
+            <input type="button" name="boton" id="boton" value="Botón">
+        </fieldset>
+    </form>
+
+</body>
+</html>
