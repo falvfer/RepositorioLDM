@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Pr6Act2</title>
+    <meta name="description" content="Ejercicio de la Práctica 6">
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tbody tr td:nth-child(2n-1){
+            background-color: rgb(192, 192, 255);
+            padding-left: 1.5em;
+            text-align: right;
+        }
+
+        th {
+            background-color: rgb(245, 245, 183);
+        }
+        
+        td ,th {
+            padding: 0.15em;
+            border: 1px solid black;
+        }
+
+        tfoot td div {
+            margin: auto;
+            width: fit-content;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="">
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Formulario de registro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><input type="text" name="nombre" id="nombre" size="20"></td>
+                    <td><label for="sexo">Sexo:</label></td>
+                    <td>
+                        <label for="rad1">Hombre</label><input type="radio" name="sexo" id="hombre">
+                        <label for="rad2">Mujer</label><input type="radio" name="sexo" id="mujer">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="usuario">Usuario</label></td>
+                    <td><input type="text" name="usuario" id="usuario" size="20"></td>
+                    <td rowspan="5"><label for="aficiones">Aficiones</label><br/></td>
+                    <td rowspan="5">
+                        <input type="checkbox" name="aficiones" id="viajar"><label for="viajar">Viajar</label><br/>
+                        <input type="checkbox" name="aficiones" id="cine"><label for="cine">Cine</label><br/>
+                        <input type="checkbox" name="aficiones" id="deportes"><label for="deportes">Deportes</label><br/>
+                        <input type="checkbox" name="aficiones" id="leer"><label for="leer">Leer</label><br/>
+                        <input type="checkbox" name="aficiones" id="musica"><label for="musica">Música</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" name="pass" id="pass" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label for="provincia">Provincia</label></td>
+                    <td>
+                        <select name="provincia" id="provincia">
+                            <optgroup label="Andalucía">
+                                <option value="huelva">Huelva</option>
+                                <option value="sevilla">Sevilla</option>
+                                <option value="cadiz">Cádiz</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="jaen">Jaén</option>
+                                <option value="granada">Granada</option>
+                                <option value="malaga">Málaga</option>
+                                <option value="almeria">Almería</option>
+                            </optgroup>
+                            <optgroup label="Cataluña">
+                                <option value="lerida">Lérida</option>
+                                <option value="gerona">Gerona</option>
+                                <option value="barcelona">Barcelona</option>
+                                <option value="tarragona">Tarragona</option>
+                            </optgroup>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="foto">Foto:</label></td>
+                    <td><input type="file" name="foto" id="foto" accept=".png, .jpg"></td>
+                </tr>
+                <tr>
+                    <td><label for="firma">Firma:</label></td>
+                    <td><textarea name="firma" id="firma" cols="23" rows="3"></textarea></td>   
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <div>
+                            <input type="submit" name="enviar" id="enviar" value="Enviar">
+                            <input type="reset" name="borrar" id="borrar" value="Borrar">
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+
+    <br>
+    <hr/>
+    <p><a href="../index.html#pr6">Volver</a></p>
+</body>
+</html>

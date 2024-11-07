@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Pr6Act3</title>
+    <meta name="description" content="Ejercicio de la Práctica 6">
+    <style>
+        #enviarCorreo {
+            width: 20em;
+        }
+        input, select {
+            margin-top: 0.15em;
+            margin-bottom: 0.15em;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        
+        FORMULARIO DE REGISTRO<br/>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" size="40"><br/>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" size="20"><br/>
+
+        <label for="poblacion">Población</label>
+        <input type="text" name="poblacion" id="poblacion" size="20"><br/>
+
+        <label for="llegar">¿Como llegó a nuestra web?</label>
+        <select name="llegar" id="llegar">
+            <option value="ejercicio">Porque es un ejercicio de clase</option>
+            <option value="amigo">Por recomendación de un amigo</option>
+            <option value="publicidad">Por publicidad en otros sitios</option>
+            <option value="azar" selected>Al azar</option>
+        </select><br/>
+
+        <div>
+            <input type="submit" name="enviar" id="enviar" value="Enviar">
+            <input type="submit" name="enviarCorreo" id="enviarCorreo" value="Enviar">
+            <input type="reset" name="borrar" id="borrar" value="Borrar">
+        </div>
+    </form>
+
+    <br>
+    <hr/>
+    <p><a href="../index.html#pr6">Volver</a></p>
+</body>
+</html>

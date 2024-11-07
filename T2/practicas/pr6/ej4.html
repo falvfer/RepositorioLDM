@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Pr6Act4</title>
+    <meta name="description" content="Ejercicio de la Práctica 6">
+    <style>
+        #enviarCorreo {
+            width: 20em;
+        }
+        input, select {
+            margin-top: 0.15em;
+            margin-bottom: 0.15em;
+        }
+        .boton {
+            width: 20em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido</h1>
+
+    <form action="">
+        <!-- Tipos Input:
+            button, checkbox, color,  date,
+            week,   email,    file,   hidden,
+            image,  month,    number, password,
+            radio,  range,    reset,  search,
+            submit, tel,      text,   time,
+            url,    datetime-local-->
+    
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" size="20"><br/>
+    
+            <label for="area">Mensaje</label>
+            <textarea name="area" id="area" cols="80" rows="4"></textarea>
+        </fieldset>
+        <hr/>
+        <input type="button" name="boton" id="boton" value="Haz click sobre mí">
+        <hr/>
+        <p>
+            <label for="color">Seleccione el color de su icono</label><br/>
+            <input type="radio" name="color" id="rojo"><label for="rojo">Rojo</label><br/>
+            <input type="radio" name="color" id="verde"><label for="verde">Verde</label><br/>
+            <input type="radio" name="color" id="azul"><label for="azul">Azul</label><br/>
+
+            ¿Como llegó a nuestra web?
+        </p>
+        <hr/>
+        <p>
+            <label for="materia">Escoja una materia:</label>
+            <select name="materia" id="materia">
+                <option value="matematicas">Matemáticas</option>
+                <option value="lengua">Lengua</option>
+                <option value="ingles">Inglés</option>
+                <option value="geografia">Geografía</option>
+                <option value="biologia">Biología</option>
+                <option value="fisica">Física</option>
+                <option value="ciudadania">Ciudadanía</option>
+            </select>
+        </p>
+        <hr/>
+        <p>
+            <label for="disp">Seleccione los días con disponibilidad</label><br/>
+            <input type="checkbox" name="disp" id="lunes"><label for="lunes">Lunes</label><br/>
+            <input type="checkbox" name="disp" id="martes"><label for="martes">Martes</label><br/>
+            <input type="checkbox" name="disp" id="miercoles"><label for="miercoles">Miércoles</label><br/>
+            <input type="checkbox" name="disp" id="jueves"><label for="jueves">Jueves</label><br/>
+            <input type="checkbox" name="disp" id="viernes"><label for="viernes">Viernes</label><br/>
+        </p>
+        <hr/>
+        <p>
+            <label for="preferente">Seleccione el día preferente:</label>
+            <select name="preferente" id="preferente">
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+            </select>
+        </p>
+        <hr/>
+        <p>
+            <label for="curr">Adjunta tu currículum:</label>
+            <input type="file" name="curr" id="curr" accept=".pdf">
+        </p>
+        <hr/>
+        <div>
+            <input type="submit" name="enviar" id="enviar" class="boton" value="Enviar">
+            <input type="reset" name="reiniciar" id="reiniciar" class="boton" value="Borrar">
+        </div>
+    </form>
+
+    <br>
+    <hr/>
+    <p><a href="../index.html#pr6">Volver</a></p>
+</body>
+</html>

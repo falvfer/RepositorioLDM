@@ -10,14 +10,6 @@
 <body>
 
     <form action="">
-        <!-- Tipos Input:
-            button, checkbox, color,  date,
-            week,   email,    file,   hidden,
-            image,  month,    number, password,
-            radio,  range,    reset,  search,
-            submit, tel,      text,   time,
-            url,    datetime-local-->
-    
         FORMULARIO DE REGISTRO<br/>
         
         <label for="nombre">Nombre</label>
@@ -65,16 +57,20 @@
             </select>
         </p>
 
-        <label for="fil"><h3>File</h3></label>
-        <input type="file" name="fil" id="fil" accept=".png, .jpg">
+        <p>
+            <label for="firma">Firma</label>
+            <textarea name="firma" id="firma" cols="48" rows="3"></textarea>
+        </p>
 
-        <label for="area"><h3>Textarea</h3></label>
-        <textarea name="area" id="area" cols="30" rows="4" placeholder="Texto"></textarea>
+        <p>
+            <label for="foto">Foto</label>
+            <input type="file" name="foto" id="foto" accept=".png, .jpg">
+        </p>
 
-        <label for="boton"><h3>Button</h3></label>
-        <input type="submit" name="boton" id="enviar" value="Enviar">
-        <input type="reset" name="boton" id="reiniciar" value="Reiniciar">
-        <input type="button" name="boton" id="boton" value="Botón">
+        <p>
+            <input type="submit" name="enviar" id="enviar" value="Enviar">
+            <input type="reset" name="borrar" id="borrar" value="Borrar">
+        </p>
     </form>
 
     <br>
