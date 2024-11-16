@@ -105,3 +105,11 @@ form input {
     margin: auto;
     width: fit-content;
 }
+
+hr {
+    border-color: white;
+}
+
+p a {
+    color: white;
+}
