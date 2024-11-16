@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(52, 116, 62);
+}
+
+h1 {
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.blanco {
+    font-family: serif;
+    font-style: italic;
+    color: white;
+}
+
+.beis {
+    color: rgb(231, 215, 169);
+    font-family: sans-serif;
+}
+
+.dorado {
+    font-size: 130%;
+    font-family: monospace;
+    color: rgb(192, 144, 22);
+}
+
+.rojo {
+    font-family: cursive;
+    color: rgb(182, 27, 27);
+}
+
+hr {
+    border-color: rgb(33, 116, 33);
+}
