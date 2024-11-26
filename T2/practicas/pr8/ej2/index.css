@@ -1,7 +1,53 @@
-h1 {
-    background-color: dodgerblue;
+body {
+    background-color: #ffebef;
+    background-image: url("img/corazon-1.svg"), url("img/corazon-2.svg");
+    background-repeat: repeat-y;
+    background-size: 6%;
+    background-position: left, right;
+    background-position-y: top;
+    text-align: center;
+    font-family: sans-serif;
 }
 
-p:first-of-type {
-    background-color: tomato;
+h1 {
+    text-transform: uppercase;
+}
+
+div {
+    border: 3px solid black;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 0.7em;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-position: center;
+}
+
+.s1 {
+    color: white;
+    background-image: url("img/manchas.png");
+}
+
+.s2 {
+    color: yellow;
+    background-image: url("img/fuego.svg"), url("img/fuego.svg"), url("img/tallos.jpg");
+    background-position-x: left, right, center;
+    background-position-y: bottom, bottom, center;
+    background-repeat: no-repeat, no-repeat, repeat;
+}
+
+.s3 {
+    color: darkred;
+    background-image: url("img/ojo.svg"), url("img/hexagonos.jpg");
+    background-repeat: no-repeat, repeat;
+    font-weight: bold;
+}
+
+.s4 {
+    color: darkgreen;
+    background-image: url("img/caballo.svg"), url("img/estrellas.png");
+    font-weight: bold;
+    background-position: bottom, center;
+    background-repeat: repeat-x, repeat;
+    background-size: 5%, auto;
 }

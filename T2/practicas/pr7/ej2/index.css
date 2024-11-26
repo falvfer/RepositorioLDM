@@ -1,0 +1,7 @@
+h1 {
+    background-color: dodgerblue;
+}
+
+p:first-of-type {
+    background-color: tomato;
+}

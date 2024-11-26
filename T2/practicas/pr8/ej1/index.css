@@ -1,27 +1,105 @@
-.tomato {
-    background-color: tomato;
+body {
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.orange {
-    background-color: orange;
+h1 {
+    text-transform: uppercase;
+    color: white;
+    background-color: #e64d1a;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 0.6em;
+    padding-left: 0.5em;
+    padding-bottom: 0.6em;
+    font-size: 4em;
 }
 
-.dodgerblue {
-    background-color: dodgerblue;
+main {
+    border-left: solid 3px #ff6633;
+    border-right: solid 3px #ff6633;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 3em;
 }
 
-.mediumseagreen {
-    background-color: mediumseagreen;
+section:nth-of-type(1) {
+    margin-bottom: 3em;
 }
 
-.gray {
-    background-color: gray;
+section {
+    background-color: #ffd8cc;
+    padding-bottom: 1em;
 }
 
-.slateblue {
-    background-color: slateblue;
+h2 {
+    background-color: #ff6633;
+    color: white;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    font-size: 2em;
 }
 
-.violet {
-    background-color: violet;
+article {
+    background-color: white;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+h3 {
+    background-color: #ff6633;
+    color: white;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+}
+
+article > div {
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+article > div > div {
+    width: 80%;
+    padding-right: 1em;
+    text-align: justify;
+    margin-top: -1em;
+    font-size: 1.4em;
+}
+
+aside {
+    padding-left: 2em; 
+    margin: 0 auto;
+    border-left: solid 3px #ff6633;
+    width: 15%;
+    height: fit-content;
+}
+
+aside p {
+    margin-top: 0.2em;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+aside img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+footer {
+    background-color: #e64d1a;
+    color: white;
+    padding: 0.2em;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-size: 1.1em;
+    margin-top: 3em;
 }

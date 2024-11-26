@@ -1,58 +1,48 @@
-body {
-    background-color: lightgray;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 8em;
-    padding-right: 8em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-h1 {
-    letter-spacing: 0.3em;
-    font-size: 300%;
-    text-align: center;
-}
-
-h2 {
-    clear: both;
-    font-size: 200%;
-    color: white;
-    background-color: gray;
-    padding: 0.15em;
-}
-
-.divImg {
-    margin-left: 7em;
-    float: left;
+table {
+    margin: 0 auto;
     margin-bottom: 2em;
 }
 
-.divP {
-    margin-left: 15em;
-    margin-right: 5em;
+table, tr, td {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    padding: 0.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.t1 tr:nth-child(2n-1) td {
+    background-color: red;
+}
+
+.t1 tr:nth-child(2n) td {
+    background-color: green;
+}
+
+.t2 tr:nth-child(3) td {
+    background-color: red;
+}
+
+.t3 tr:nth-child(3n) td {
+    background-color: red;
+}
+
+.t4 tr:nth-child(3n-2) td {
+    background-color: red;
+}
+
+.t5 tr:nth-child(3n-1) td {
+    background-color: red;
+}
+
+.t6 tr:nth-last-child(3n-2) td {
+    background-color: red;
 }
 
 p {
-    text-indent: 2em;
-    text-align: justify;
-}
-
-strong {
-    background-color: white;
-}
-
-em {
-    color: red;
-}
-
-/* BOTÓN DE VOLVER*/
-
-footer {
-    clear: both;
-    margin-left: -7em;
-    margin-right: -7em;
-}
-
-hr {
-    border-color: rgb(187, 187, 187);
+    text-align: center;
+    margin-top: 2em;
 }
