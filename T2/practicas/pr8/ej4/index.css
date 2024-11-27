@@ -1,0 +1,24 @@
+h2 {
+    font-family: cursive;
+    text-align: center;
+}
+
+form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    margin-bottom: 0.3em;
+}
+
+.col {
+    flex-direction: row;
+    display: flex;
+}
+.col div {
+    margin-right: 1em;
+}
+.row33 {
+}

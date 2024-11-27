@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Francisco Jesús Álvarez Fernández">
+  <title>Pr8Act4</title>
+  <meta name="description" content="Ejercicio de la Práctica 8">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <h2>HOJA DE INSCRIPCIÓN</h2>
+    <h2>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+
+    <form action="">
+
+        <fieldset class="f1">
+            <legend>Datos personales</legend>
+            <div class="col">
+                <div class="row33">
+                    <label for="nombre"><p>Nombre</p></label>
+                    <input type="text" name="nombre" id="nombre" size="20">
+                </div>
+                <div class="row33">
+                    <label for="apellidos"><p>Apellidos</p></label>
+                    <input type="text" name="apellidos" id="apellidos" size="20">
+                </div>
+                <div class="row33">
+                    <label for="dni"><p>DNI</p></label>
+                    <input type="text" name="dni" id="dni" size="20">
+                </div>
+            </div>
+            <div class="col">
+                <div class="row33">
+                    <label for="localidad"><p>Localidad de Nacimiento</p></label>
+                    <input type="text" name="localidad" id="localidad" size="20">
+                </div>
+                <div class="row33">
+                    <label for="provincia"><p>Provincia:</p></label>
+                    <select name="provincia" id="provincia">
+                        <option value="huelva" selected>Huelva</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="granada">Granada</option>
+                    </select>
+                </div>
+                <div class="row33">
+                    <label for="nacimiento"><p>Fecha de Nacimiento</p></label>
+                    <input type="date" name="nacimiento" id="nacimiento" size="20">
+                </div>
+            </div>
+            <div class="col">
+                <div class="row66">
+                    <label for="direccion"><p>Dirección</p></label>
+                    <input type="text" name="direccion" id="direccion" size="47">
+                </div>
+                <div class="row33">
+                    <label for="codigo"><p>Código Postal:</p></label>
+                    <input type="text" name="codigo" id="codigo" size="20">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="f2">
+            <legend><label for="acceso">Forma de Acceso</label></legend>
+
+            <dl>
+                <dt>
+                    <input type="radio" name="acceso" id="directo"><label for="directo">Directo</label><br/>
+                </dt>
+                    <dd>
+                        <input type="radio" name="acceso" id="bachiller"><label for="bachiller">Bachillerato Log Modalidad</label>
+                        <input type="text" name="acceso" id="opcionBach" size="20">
+                    </dd>
+                    <dd>
+                        <input type="radio" name="acceso" id="experimental"><label for="experimental">Experimental</label>
+                    </dd>
+                    <dd>
+                        <input type="radio" name="acceso" id="cou"><label for="cou">COU Opción</label>
+                        <input type="text" name="acceso" id="opcionCou" size="20">
+                    </dd>
+                    <dd>
+                        <input type="radio" name="acceso" id="fp2"><label for="fp2">FP2</label>
+                    </dd>
+                    <dd>
+                        <input type="radio" name="acceso" id="otrosAcc"><label for="otrosAcc">Otros (Especifique)</label>
+                        <input type="text" name="acceso" id="opcionOtrosAcc" size="20">
+                    </dd>
+                <dt>
+                    <input type="radio" name="acceso" id="prueba"><label for="prueba">Prueba Libre</label>
+                </dt>
+            </dl>
+            
+        </fieldset>
+
+        <fieldset class="f3">
+            <legend><label for="documentos">Documentos Adjuntados</label></legend>
+            
+            <input type="checkbox" name="documentos" id="fotocopia"><label for="fotocopia">Fotocopia DNI</label>
+            <input type="checkbox" name="documentos" id="certificado"><label for="certificado">Fotocopia DNI</label><br/>
+            
+            <input type="checkbox" name="documentos" id="otrosDoc"><label for="otrosDoc">Fotocopia DNI</label>
+            <input type="text" name="documentos" id="opcionOtrosDoc" size="20">
+            
+        </fieldset>
+        
+        <input type="submit" name="boton" id="enviar" value="Enviar Solicitud">
+        <input type="reset" name="boton" id="limpiar" value="Limpiar datos">
+
+    </form>
+
+</body>
