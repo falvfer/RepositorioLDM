@@ -3,22 +3,83 @@ h2 {
     text-align: center;
 }
 
+#enviar, #limpiar {
+    font-family: cursive;
+    
+}
+
+form > div:last-of-type {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 1em;
+}
+
 form {
-    width: 70%;
+    width: 50em;
     margin-left: auto;
     margin-right: auto;
 }
 
+fieldset {
+    padding-bottom: 1em;
+}
+
 p {
     margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+.f1 {
+    background-color: lightgray;
+}
+
+.f2 {
+    background-color: rgb(238, 194, 153);
+}
+
+.f3 {
+    background-color: rgb(194, 134, 134);
+}
+
+legend {
+    border: 1px solid black;
+    background-color: white;
 }
 
 .col {
-    flex-direction: row;
-    display: flex;
+    clear: both;
 }
+
 .col div {
-    margin-right: 1em;
+    float: left;
 }
+
 .row33 {
+    width: 12em;
+}
+
+.row66 {
+    width: 24em;
+}
+
+dl {
+    margin-left: 3em;
+}
+
+.f3 input:nth-child(4) {
+    margin-left: 4em;
+}
+
+form > div:last-of-type input {
+    background-color: rgb(240, 242, 243);
+    border: 2px solid grey;
+    padding: 0.2em;
+    font-size: 1.2em;
+}
+
+form > div:last-of-type input:hover {
+    background-color: lightgrey;
+    border-left: 1px solid rgb(235, 235, 235);
+    border-top: 1px solid rgb(235, 235, 235);
 }
