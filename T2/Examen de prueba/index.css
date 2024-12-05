@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'PressStart';
+    src: url('fonts/press-start-2p.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9c5db;
+    background-image: url(img/Raspberry_Pi_Logo.svg);
+    background-repeat: repeat-y;
+    background-position-x: 2.5rem;
+    background-position-y: top;
+    background-size: 5rem;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+    word-spacing: 0.07rem;
+}
+
+h1 {
+    color: #27ae60;
+    font-family: PressStart;
+    text-shadow: #7dcea0 0.5rem -0.5rem;
+}
+
+header, main, footer {
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+a {
+    color: rgb(85, 121, 210);
+    text-decoration: none;
+}
+
+nav {
+    background-color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: x-large;
+    word-spacing: 2em;
+}
+
+article {
+    border: 0.5rem solid #c20c59;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d494b0;
+    overflow: auto;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    background-color: #c2628a;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+h2::first-letter {
+    font-size: 120%;
+}
+
+article p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+article p:nth-child(2n) strong {
+    color: red;
+}
+
+article p em {
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+article p span {
+    border-top: solid #2a9054;
+    border-bottom: solid #2a9054;
+}
+
+article p:last-child {
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    text-indent: 0%;
+    border-radius: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 1.5rem;
+}
+
+article p:last-child a {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: rgb(85, 121, 210);
+    position: relative;
+    left: 0%;
+    top: 5%;
+}
+
+img {
+    border: solid white;
+    padding: 0.3rem;
+}
+
+article:nth-child(2n-1) aside {
+    float: right;
+    margin: 0.5rem;
+}
+
+article:nth-child(2n) aside {
+    float: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+article:nth-child(2n) p:last-child {
+    margin-top: 5rem;
+    margin-left: 22rem;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+hr {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    background-color: #c20c59;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+footer a {
+    border: dashed 0.5rem #27ae60;
+    padding: 0.5rem;
+    color: #2a9054;
+    background-color: aquamarine;
+}
