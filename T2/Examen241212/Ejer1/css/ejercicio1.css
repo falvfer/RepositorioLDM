@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'dancing-script';
+    src: url('../fonts/dancing-script.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../img/flag-netherlands-1f1f3-1f1f1.svg), url(../img/cheese-wedge-1f9c0.svg);
+    background-repeat: repeat-y;
+    background-position-x: 2em, right;
+    background-size: 75px;
+    background-position-y: top;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.5em;
+}
+
+div {
+    text-align: justify;
+    background-color: black;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.8em;
+    border-radius: 0.5rem;
+}
+
+body > div {
+    background-color: rgb(223, 28, 28);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10em;
+    padding-right: 10em;
+    border-radius: 0;
+}
+
+.amsterdam {
+    font-size: x-large;
+    color: black;
+}
+
+.div2 .amsterdam {
+    color:red;
+}
+
+.aristocrata {
+    color: blue;
+}
+
+em {
+    color: green;
+    font-style: normal;
+}
+
+.div2:nth-child(odd) p:nth-child(2n) em {
+    color:yellow
+}
+
+blockquote em {
+    font-style: italic;
+}
+
+strong {
+    color: fuchsia;
+    font-size: smaller;
+    text-transform: uppercase;
+}
+
+strong::first-letter {
+    font-size: medium;
+}
+
+hr {
+    margin-top: auto;
+    margin-bottom: 1em;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 0.5em;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.div2:nth-child(odd) {
+    margin-right: 30%;
+}
+
+.div2:nth-last-child(odd) {
+    margin-left: 30%;
+}
+
+a {
+    background-color: white;
+    padding: 0.5em;
+    margin-left: 45%;
+    margin-top: 1em;
+    box-sizing: border-box;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+blockquote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: black;
+    width: 15em;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: auto;
+    margin-right: auto;
+    padding: 0.2rem;
+    text-align: right;
+}
+
+blockquote p:nth-child(2n-1) {
+    font-family: dancing-script;
+    font-size: larger;
+}
+
+blockquote p:nth-child(2n) {
+    font-weight: bold;
+}
+
+blockquote em {
+    color: black;
+}
