@@ -1,0 +1,25 @@
+.bgMainColor {
+    background-color: rgb(137, 118, 245);
+}
+
+.bgSecondColor {
+    background-color: rgb(221, 216, 245);
+}
+
+.bgNavColor:hover {
+    background-color: rgb(201, 194, 238);
+}
+
+.bgMenuNav {
+    background-color: rgb(201, 194, 238);
+}
+
+.borderNav {
+    border: 5px solid rgb(137, 118, 245);
+    border-left: 0;
+    border-right: 0;
+}
+
+.logoFont {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
