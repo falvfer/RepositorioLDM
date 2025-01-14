@@ -1,5 +1,2 @@
-Esta lista del origen de cada imagen para poder comprobar que las puedo usar,
-ya sea porque son públicas, dibujadas, tienen una licencia que lo permite, etc.
-
-logo.png -> https://garystockbridge617.getarchive.net/amp/media/gadget-devices-technology-science-technology-5c1591
-carrito-de-compras.png -> https://www.flaticon.es/iconos-gratis/carrito-inteligente
+Todas las imagenes usadas en esta página web son libres de uso tanto personal como comercial.
+Algunas de ellas están editadas o hechas completamente por el creador: Francisco.

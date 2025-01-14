@@ -12,59 +12,100 @@
 </head>
 <body>
 
-    <header class="container-fluid px-5 py-1 pt-0 align-middle bgMainColor">
+    <!-- HEADER DE DISPOSITIVO CON PANTALLA GRANDE -->
+    <header class="container-fluid px-5 py-0 pt-0 align-middle bgMainColor col-md-auto d-none d-md-block">
         <div class="row align-items-center">
             <div id="logo" class="col-md-auto">
                 <img src="img/logo.png" alt="Logo de Componentes y más" height="100px"/>
                 <h3 class="d-inline logoFont align-text-top">Componentes y más</h3>
             </div>
             <div class="col"></div>
-            <div id="carrito" class="col-md-auto">
-                <div class="bgSecondColor rounded-5 px-3 py-2 shadow" style="width: max-content;">
+            <div id="carrito" class="col-md-auto d-none d-md-block">
+                <div class="bgSecondColor rounded-5 px-3 py-2 shadow-sm" style="width: max-content;">
                     <img src="img/carrito-de-compras.png" alt="Icono de cesta de la compra" height="30px"/>
                     <div class="align-text-top d-inline fs-6 fw-bold">Mi Cesta</div>
                 </div>
             </div>
         </div>
     </header>
+    
+    <!-- HEADER DE DISPOSITIVO CON PANTALLA PEQUENNA -->
+    <header class="container-fluid px-3 py-2 pt-0 align-middle bgMainColor col-md-auto d-md-none">
+        <div class="row align-items-center">
+            <div id="logo-d" class="col-auto mx-auto">
+                <img src="img/logo.png" alt="Logo de Componentes y más" height="100px"/>
+            </div>
+            <div class="col"></div>
+            <div class="col-auto mx-auto">
+                <div id="carrito-d" class="mx-auto" style="width: max-content;">
+                    <div class="bgSecondColor rounded-5 px-3 py-2 shadow-sm" style="width: max-content;">
+                        <img src="img/carrito-de-compras.png" alt="Icono de cesta de la compra" height="30px"/>
+                        <div class="align-text-top d-inline fs-6 fw-bold">Mi Cesta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <nav class="container-fluid text-center px-5 align-middle borderNav bgSecondColor position-sticky top-0">
-        <ul class="justify-content-md-center row list-unstyled align-items-center my-0">
-            <li class="col-md-auto mx-1 fw-bold py-2 bgNavColor dropdown">
-                <button
-                    class="border-0 bg-transparent fw-bold dropdown-toggle" 
-                    id="componentesDropdown" 
-                    data-bs-toggle="dropdown" 
-                    aria-expanded="false">
-                    Componentes
-                </button>
-                <ul class="dropdown-menu text-start bgSecondColor border-0" aria-labelledby="componentesDropdown">
-                    <li><a class="dropdown-item" href="#">a</a></li>
-                    <li><a class="dropdown-item" href="#">b</a></li>
-                    <li><a class="dropdown-item" href="#">c</a></li>
-                </ul>
-            </li>
-            <li class="col-md-auto mx-1 fw-bold py-2 bgNavColor">Dispositivos
-                <ul>
-
-                </ul>
-            </li>
-            <li class="col-md-auto mx-1 fw-bold py-2 bgNavColor">Reparaciones
-                <ul>
-
-                </ul>
-            </li>
-            <li class="col-md-auto mx-1 fw-bold py-2 bgNavColor">Algo más
-                <ul>
-
-                </ul>
-            </li>
-        </ul>
+    <!-- NAV de dispositivo con pantalla GRANDE-->
+    <nav class="container-fluid text-center px-5 align-middle borderNav bgSecondColor position-sticky top-0 d-none d-md-block">
+        <div class="justify-content-center row align-items-center my-0">
+            <a href="#" class="col-md-auto mx-1 fw-bold py-2 bgNavColor text-decoration-none text-black">Componentes</a>
+            <a href="#" class="col-md-auto mx-1 fw-bold py-2 bgNavColor text-decoration-none text-black">Dispositivos</a>
+            <a href="#" class="col-md-auto mx-1 fw-bold py-2 bgNavColor text-decoration-none text-black">Reparar</a>
+            <a href="#" class="col-md-auto mx-1 fw-bold py-2 bgNavColor text-decoration-none text-black">Contacto</a>
+        </div>
     </nav>
 
-    <main>
+    <!-- NAV de dispositivo con pantalla PEQUENNA-->
+    <nav class="container-fluid text-center px-2 align-middle borderNav bgSecondColor d-md-none">
+        <div class="justify-content-center row align-items-center my-0">
+            <a href="#" class="col-auto mx-0 fw-bold py-2 bgNavColor text-decoration-none text-black">Componentes</a>
+            <a href="#" class="col-auto mx-0 fw-bold py-2 bgNavColor text-decoration-none text-black">Dispositivos</a>
+            <a href="#" class="col-auto mx-0 fw-bold py-2 bgNavColor text-decoration-none text-black">Reparar</a>
+            <a href="#" class="col-auto mx-0 fw-bold py-2 bgNavColor text-decoration-none text-black">Contacto</a>
+        </div>
+    </nav>
 
+    <main class="container-xl px-3 align-middle pt-3">
 
+        <div class="row mb-md-3">
+                
+            <div class="col-md mb-3 mb-md-0 mx-md-3 p-0 rounded-4 bgAD1Color" style="box-sizing: border-box;">
+                <img src="img/ad1.jpg" alt="" class="w-100 rounded-4">
+            </div>
+            <div class="col-md mb-3 mb-md-0 mx-md-3 p-0 rounded-4 bgAD1Color" style="box-sizing: border-box;">
+                <img src="img/ad2.jpg" alt="" class="w-100 rounded-4">
+            </div>
+            <div class="col-md mb-3 mb-md-0 mx-md-3 p-0 rounded-4 bgAD1Color" style="box-sizing: border-box;">
+                <img src="img/ad3.jpg" alt="" class="w-100 rounded-4">
+            </div>
+
+        </div>
+       
+        
+        <p>Ratione dolorum voluptates cumque quia eum quis iure rerum, aut magni optio distinctio? Modi aut eius consequuntur culpa dolores omnis, quam similique magnam nemo nihil, inventore distinctio sequi, quia necessitatibus!</p>
+        <p>Modi consequatur et similique, dolorum aut maxime sit at ad eligendi doloremque eum voluptatem tenetur nulla architecto molestiae corrupti neque eius ipsam aliquid. A neque iste quos, ipsam corporis perspiciatis.</p>
+        <p>Error cumque et incidunt dolor in facere est eligendi harum mollitia officiis, autem dignissimos, ratione consequatur vel ducimus, quisquam exercitationem similique laudantium veniam illum quidem praesentium! Fugit non beatae doloribus.</p>
+        <p>Repudiandae laborum deserunt accusantium illo, laudantium voluptatem nemo accusamus odio, ea quo pariatur nihil saepe quae alias voluptas autem perspiciatis esse eum mollitia ut recusandae provident. Nemo sunt nostrum voluptatum.</p>
+        <p>Sit dolores tempora deleniti eligendi. Saepe, non eius dolor provident ab laboriosam consequuntur, voluptas maiores amet optio, facere rerum fugiat modi perferendis doloremque voluptate itaque odio unde aliquid consequatur. Sed?</p>
+        <p>Doloremque ducimus aspernatur illo unde commodi nihil earum iste officia. Dolorem blanditiis voluptate illo odit illum veritatis quam, excepturi delectus in tempora quod possimus distinctio dolor nesciunt! Perferendis, quia harum.</p>
+        <p>Adipisci vel, doloremque impedit dolorem delectus, eaque placeat veritatis nesciunt, ab nihil nostrum pariatur sit repellendus harum odit quo blanditiis earum laudantium quasi voluptates! Doloremque hic facilis architecto voluptate eaque.</p>
+        <p>Quisquam exercitationem voluptate officiis sunt necessitatibus, velit nihil veniam illo hic temporibus quas. Ab nihil reiciendis, magni quod voluptate, incidunt illo dicta debitis, eum alias eos delectus eius doloremque iusto.</p>
+        <p>Saepe, voluptas facilis provident repellat, nam error rem eum cumque tenetur illum aliquam iste eos exercitationem quas fugiat maiores? Suscipit consequuntur officia molestiae non blanditiis illo, id autem ratione natus!</p>
+
+        <p>Expedita earum porro ab sapiente dolorem quo deserunt asperiores, error omnis, adipisci mollitia cupiditate nulla ad inventore libero animi voluptatum nisi illum dicta distinctio id! Praesentium tempora officia aspernatur cupiditate.</p>
+        <p>Maxime, excepturi? Culpa sapiente nemo perferendis nisi, facilis animi incidunt illum accusamus expedita facere pariatur beatae modi. Ipsa corporis, ducimus et inventore quibusdam sequi quos qui quaerat id ratione quisquam!</p>
+        <p>Nostrum est unde dolor dolorum velit enim, quae dignissimos delectus debitis assumenda vel necessitatibus dicta dolorem, perferendis atque maxime magnam nulla nam at officiis qui cum, in et sapiente? Provident!</p>
+        <p>Earum dolorum laudantium vero ad quidem amet quae cupiditate sint nulla impedit quis iure facere eum excepturi enim expedita quas eligendi consequuntur voluptatum eius quisquam, neque eveniet necessitatibus quaerat. Laudantium!</p>
+        <p>Debitis atque minus laudantium amet aut iste, officiis numquam voluptatibus repellendus vitae reiciendis id corrupti accusamus! Nisi deserunt ad labore temporibus a ipsum doloribus! Magnam nam eum minima alias ratione.</p>
+        <p>Natus aut dolorum modi, similique provident velit aliquam voluptas molestiae dicta nesciunt? Dolore expedita nam quisquam totam quam impedit, ex modi vel soluta odio sapiente asperiores perspiciatis ullam ratione temporibus.</p>
+        <p>Tempora, laborum enim quas distinctio non animi et iusto harum ipsam veritatis corrupti incidunt porro quidem modi, voluptatem omnis culpa consequuntur. Minus incidunt in ex? Tenetur alias commodi asperiores culpa.</p>
+        <p>Sint ex vero recusandae, excepturi similique in aperiam quis blanditiis laboriosam repellendus impedit, voluptatum quae natus voluptates dolor hic nulla fugiat soluta ipsum nostrum dolorem. Quas deleniti obcaecati doloremque accusantium!</p>
+        <p>Iusto illum perferendis atque iure quaerat dolor voluptatibus corporis repudiandae fugit delectus rem, ea necessitatibus molestias et quo. Dolor minima quis, debitis repudiandae exercitationem ducimus numquam sunt voluptatum nulla molestias.</p>
+        <p>Reiciendis accusantium, quod optio quos vero a dolorum expedita, magni aliquam doloremque perferendis, praesentium corporis molestias beatae laborum odit itaque minus dolore deleniti! Veniam adipisci itaque quo voluptatibus. Quae, doloremque.</p>
+        
+        
         
     </main>
 
