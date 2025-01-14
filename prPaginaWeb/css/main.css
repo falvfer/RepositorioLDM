@@ -6,17 +6,6 @@
     background-color: rgb(221, 216, 245);
 }
 
-.bgAD1Color {
-}
-
-.bgAD2Color {
-    background-color: rgb(200, 187, 255);
-}
-
-.bgAD3Color {
-    background-color: rgb(226, 220, 255);
-}
-
 .bgNavColor:hover {
     background-color: rgb(201, 194, 238);
 }
