@@ -1,4 +1,4 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -40,6 +40,6 @@ body, html {
 }
 
 .top0 {
-    position: sticky;
+    position: sticky !important;
     top: -1px;
 }
