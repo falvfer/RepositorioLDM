@@ -43,3 +43,20 @@ html {
     position: sticky !important;
     top: -1px;
 }
+
+.p-contacto {
+    max-width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+@media (min-width: 800px) {
+    .p-contacto {
+        max-width: 800px;
+    }
+}
+
+.contacto-bg { /*Generado con: https://cssgradient.io/ */
+    background: rgb(137,118,245);
+    background: linear-gradient(180deg, rgba(137,118,245,1) 0%, rgb(255, 255, 255) 100%);
+}
