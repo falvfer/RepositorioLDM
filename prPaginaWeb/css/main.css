@@ -4,6 +4,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .bgMainColor {
     background-color: rgb(137, 118, 245);
 }
@@ -50,13 +54,29 @@ html {
     padding-right: 2em;
 }
 
+.p-contactar {
+    max-width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 @media (min-width: 800px) {
     .p-contacto {
         max-width: 800px;
     }
 }
 
-.contacto-bg { /*Generado con: https://cssgradient.io/ */
+@media (min-width: 450px) {
+    .p-contactar {
+        max-width: 450px;
+    }
+}
+
+.contacto-bg {
     background: rgb(137,118,245);
     background: linear-gradient(180deg, rgba(137,118,245,1) 0%, rgb(255, 255, 255) 100%);
+}
+
+input {
+    border-style: solid;
 }
