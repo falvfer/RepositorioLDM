@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Titulo</title>
+    <meta name="description" content="Descripción">
+</head>
+<body>
+
+    <script>
+        console.log("---------------------")
+        // Ejemplo for-each y split para hacer un array de letras, junto a "continue"
+        var cadena = "En un lugar de la Mancha de cuyo nombre no quiero acordarme…";
+        var letras = cadena.split("");
+        var resultado = "";
+        for (i in letras) {
+            if (letras[i] == "a")
+                continue;
+            else
+                resultado += letras[i];
+        }
+        console.log(resultado);
+
+        // Ejemplo argumentos
+        function muestraDocumento() {
+            for (let i = 0; i < arguments.length; i++) {
+                document.write("<h" + (i+1) + ">" + arguments[i] + "</h" + (i+1) + ">");
+            }
+        }
+        muestraDocumento(1, "Hola", "adios", -23);
+
+    </script>
+
+</body>
+</html>

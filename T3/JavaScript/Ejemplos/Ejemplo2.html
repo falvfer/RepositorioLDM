@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Titulo</title>
+    <meta name="description" content="Descripción">
+</head>
+<body>
+
+    <script>
+        // Crear objeto Ventas
+        var Ventas = "Toyota";
+
+        // Funcion TipoAuto que devuelve Honda si es ese el nombre o "Lo siento..." si no lo es
+        function TipoAuto(nombre) {
+            if(nombre == "Honda")
+                return nombre;
+            else
+                return "Lo siento, no vendemos " + nombre + ".";
+        }
+
+        // Crear una variable de tipo objeto con varios datos
+        var automovil = {
+            miAuto: "Saturn",
+            obtenerAuto: TipoAuto("Honda"),
+            especial: Ventas
+        }
+
+        // Mostrar las propiedades del objeto
+        console.log (automovil.miAuto);
+        console.log (automovil.obtenerAuto);
+        console.log (automovil.especial);
+
+        // Crear un objeto con objetos como datos, y mostrarlos de diferente formas.
+        var car = {manyCars: {a: "Saab", b: "Jeep"}, 7: "Mazda"};
+        console.log(car.manyCars.b);
+        console.log(car[7]);
+    </script>
+
+</body>
+</html>

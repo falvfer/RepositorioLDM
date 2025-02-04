@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Titulo</title>
+    <meta name="description" content="Descripción">
+</head>
+<body>
+
+    <script>
+        console.log("---------------------")
+        // "==" vs "==="
+        if (12 == "12")
+            console.log("12 es igual a 12"); // Va a decir esto
+        else
+            console.log("12 no es igual a 12");
+
+        if (12 === "12")
+            console.log("12 es igual a 12");
+        else
+            console.log("12 no es igual a 12"); // Va a decir esto
+
+        console.log("---------------------")
+        // "??=" asigna solamente si es null o undefined
+        function saluda(nombre) {
+            nombre ??= "Alumno";
+            console.log("Hola " + nombre);
+        }
+        saluda();
+        saluda("Pepe");
+
+        console.log("---------------------")
+        // "&&=" asigna solamente si es TRUE, "true", 1 o "1"
+        var x = 1;
+        var y = false;
+        x &&= "ok";
+        y &&= "not ok";
+        console.log("Valor x: " + x);
+        console.log("Valor x: " + y);
+
+    </script>
+
+</body>
+</html>
