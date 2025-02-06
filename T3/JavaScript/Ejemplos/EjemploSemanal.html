@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Verónica Santiago Montiel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creación y eliminación dinámica de elementos DOM</title>
+    <script>
+        var t_dias, t_horas;
+
+        function cargarElementosDOM() {
+            //recogida de objetos del DOM de interés
+            t_dias = document.getElementById("dias");
+            t_horas = document.getElementById("horas");
+        }
+
+        function generarPlanificador() {
+            if (t_dias.value == undefined || t_dias.value <= 0) {
+                alert("Error. No has especificado número de días");
+            } else if (t_horas.value == undefined || t_horas.value <= 0) {
+                alert("Errer. No has especificado número de horas");
+            } else {
+                var body = document.getElementsByTagName("body")[0];
+                var tabla = document.getElementsByTagName("table");
+                if (tabla.length > 0) {
+                    tabla[0].remove();
+                }
+                let totalFilas = t_horas.value;
+                let totalCeldas = t_dias.value;
+                //Crea un elemento <table> y un elemento <body>
+                tabla = document.createElement("table");
+                tabla.classList.add("tablaJS");
+                var tblBody = document.createElement("tbody");
+                //Crea filas y celdas
+                for (var i = 0; i < totalFilas; i++) {
+                    //Crea las filas de la tabla
+                    var fila = document.createElement("tr");
+                    for (var j = 0; j < totalCeldas; j++) {
+                        //Genera cada casilla con un texto de ejemplo
+                        var celda = document.createElement("td");
+                        var textoCelda = document.createTextNode("Día " + j + " - Hora " + i);
+                        var breakLine = document.createElement("br");
+                        var input = document.createElement("input");
+                        input.setAttribute("type", "text");
+                        celda.appendChild(textoCelda);
+                        celda.appendChild(breakLine);
+                        celda.appendChild(input);
+                        fila.appendChild(celda);
+                    }
+                    //agrega cada fila al final de la tabla (al final del elemento tblbody)
+                    tblBody.appendChild(fila);
+                }
+                //Coloca el <tbody> debajo del elemento <table>
+                tabla.appendChild(tblBody);
+                //Agrega <table> al <body>
+                body.appendChild(tabla);
+                //modifica el atributo "boder" de la tabla y lo fija a "1"
+                tabla.setAttribute("border", "1");
+            }
+        }
+    </script>
+    <style>
+        .tablaJS {
+            border-spacing: 0;
+        }
+
+        .tablaJS td {
+            padding: 5px;
+        }
+
+        .tablaJS td:nth-child(2n-1) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body onload="cargarElementosDOM();">
+    <h1>Planificador semanal</h1>
+    <label for="dias">Introduce el número de días</label>
+    <input type="text" name="texto_dia" id="dias" />
+    <br /><br />
+    <label for="horas">Introduce el número de horas</label>
+    <input type="text" name="texto_horas" id="horas" />
+    <br /><br />
+    <input type="button" value="Generar planificador" onclick="generarPlanificador();" />
+    <br /><br />
+</body>
+
+</html>
