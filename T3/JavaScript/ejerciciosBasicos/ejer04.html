@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Titulo</title>
+    <meta name="description" content="Descripción">
+</head>
+<body>
+
+    <script>
+
+        function pedirOpcion() {
+            opcion = Number.parseInt(
+                prompt(
+                    "Ingresa una opción:"
+                    + "\n1. Agregar tarea"
+                    + "\n2. Marcar tarea como completada"
+                    + "\n3. Mostrar lista de tareas"
+                    + "\n4. Eliminar tarea"
+                    + "\n5. Salir"
+                )
+            );
+            if (opcion > 5 || opcion < 1 || isNaN(opcion))
+                opcionNoValida();
+        }
+
+        function opcionNoValida() {
+            alert("Opción no válida, vuelva a indicar la opción correspondiente.");
+            pedirOpcion();
+            console.log(opcion);
+        }
+
+        function agregar() {
+            let task = prompt("Ingresa la nueva tarea:");
+
+            tareas[posSiguiente] = {tarea: task, estado: false};
+
+            posSiguiente++;
+        }
+
+        function completar() {
+            let posCompletar = Number.parseInt(prompt("Indique cual tarea marcar como completada:"))-1;
+
+            if (!isNaN(posCompletar) && posCompletar >= 0 && posCompletar < posSiguiente)
+                tareas[posCompletar].estado = true;
+            else
+                alert("Número de tarea no válido, vuelva a intentarlo.");
+        }
+
+        function mostrar() {
+            let cadena = "";
+
+            for (let i = 0; i < posSiguiente; i++) {
+                cadena += (i+1) + ". " + tareas[i].tarea + ", Completada: " + tareas[i].estado + "\n";
+            }
+
+            alert(cadena);
+        }
+
+        /*
+        0 - 1. Peter
+        1 - 2. Banban
+        2 - 3. Jorge
+        3 - 4. El hamster de Jorge
+        */
+
+
+        function eliminar() {
+            let posEliminar = Number.parseInt(prompt("Indique cual tarea desea eliminar:"))-1;
+
+            if (!isNaN(posEliminar) && posEliminar >= 0 && posEliminar < posSiguiente) {
+                for (var i = posEliminar; i < posSiguiente - 1; i++) {
+                    tareas[i] = tareas[i+1];
+                }
+                posSiguiente--;
+            }
+            else
+                alert("Número de tarea no válido, vuelva a intentarlo.");
+        }
+        
+        var tareas = [];
+        var opcion = 0;
+        var posSiguiente = 0;
+
+        while (opcion != 5) {
+            pedirOpcion();
+
+            switch (opcion) {
+                case 1: agregar(); break;
+                case 2: completar(); break;
+                case 3: mostrar(); break;
+                case 4: eliminar(); break;
+            }
+        }
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Titulo</title>
+    <meta name="description" content="Descripción">
+</head>
+<body>
+
+    
+    
+    <script>
+
+        var numero = Math.trunc(Math.random() * 100 + 1);
+        var adivinado = false;
+        console.log(numero)
+        console.log(adivinado)
+        
+        var numUsuario = Number.parseInt(prompt("Intenta adivinar el número del 1 al 100:"));
+        adivinado = (numero == numUsuario);
+
+        while (!adivinado) {
+            numUsuario = Number.parseInt(prompt(("Incorrecto, es " + ((numUsuario < numero)?"mayor":"menor") + ", vuelve a intentarlo:")));
+            adivinado = (numero == numUsuario);
+        }
+
+        alert("¡Correcto! Es el " + numero);
+        
+    </script>
+
+</body>
+</html>

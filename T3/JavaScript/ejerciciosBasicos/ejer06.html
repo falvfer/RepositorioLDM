@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Titulo</title>
+    <meta name="description" content="Descripción">
+</head>
+<body>
+
+    
+    
+    <script>
+
+        function preguntar(pregunta, respuesta) {
+            let respUsuario = prompt(pregunta);
+            respUsuario = respUsuario == respuesta;
+            if (respUsuario) {
+                alert("¡Respuesta correcta!")
+                prAcertadas++;
+            } else
+                alert("Respuesta incorrecta...")
+            prTotales++;
+        }
+
+        var prTotales = 0;
+        var prAcertadas = 0;
+
+        preguntar("¿Cuál es la capital de España?", "Madrid")
+        preguntar("¿1 + 2?", "3")
+        preguntar("¿Peter?", "Peter")
+        preguntar("Di azul", "azul")
+
+        alert("Has respondido correctamente " + prAcertadas + " de " + prTotales + " preguntas.")
+        
+    </script>
+
+</body>
+</html>

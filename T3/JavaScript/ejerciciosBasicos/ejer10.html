@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jesús Álvarez Fernández">
+    <title>Titulo</title>
+    <meta name="description" content="Descripción">
+    <script>
+
+        function cambiarTamanno(id) {
+            document.getElementById(id).style.fontSize = "200%";
+        }
+
+        function devolverTamanno(id) {
+            document.getElementById(id).style.fontSize = "100%";
+        }
+        
+    </script>
+</head>
+<body>
+
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestias facere rem voluptas ullam sapiente praesentium,
+        laborum maiores eaque, doloremque impedit quasi hic perspiciatis nihil explicabo non exercitationem sint doloribus?</p>
+    
+        <input id="noVeo" type="button" value="No veo" onclick="cambiarTamanno('texto')">
+        <input id="muyGrande" type="button" value="Está muy grande" onclick="devolverTamanno('texto')">
+
+</body>
+</html>
