@@ -1,12 +1,16 @@
+// Función con la expresión regular para validar el email.
 function validarEmail(correo) {
     let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(correo);
 }
 
+// Función para probar rápidamente si un valor es nulo o no (Si es una cadena vacía).
 function notNull(texto) {
     return (texto != "");
 }
 
+// Método llamado cuando se envia el formulario, comprueva la validez de los datos y después
+// llama a la función "volverAIndex".
 function validarYVolver(e) {
     e.preventDefault(); // Evitar que se recarge la página
 
@@ -22,6 +26,8 @@ function validarYVolver(e) {
         volverAIndex();
 }
 
+// Función llamada cada vez que se entra a la página para poder cargar los datos del enlace, el cual se encarga
+// la página "contacto" de ponerlo acorde a lo que haya hecho el usuario.
 function cargarUrl() {
     var parametrosUrl = new URLSearchParams(window.location.search);
     var motivoSel = parametrosUrl.get('motivo');
@@ -35,6 +41,7 @@ function cargarUrl() {
     }
 }
 
+// Método para cambiar el contenido del main por un botón para volver a la página principal del sitio web.
 function volverAIndex() {
     let mainVar = document.getElementById("main");
     mainVar.classList = "d-flex justify-content-center align-items-center flex-grow-1 text-center";
