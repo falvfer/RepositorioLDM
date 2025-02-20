@@ -1,0 +1,62 @@
+body {
+    font-size: 120%;
+}
+
+input[type="button"] {
+    width: 300px;
+    height: 2.2em;
+    margin: 0;
+    border: 0;
+    border-radius: 0.3em;
+}
+
+.row {
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#rowBoton {
+    justify-content: end;
+}
+
+.container {
+    width: 630px;
+}
+
+.cuadrado {
+    padding: 1em;
+    border-radius: 1em;
+}
+
+
+/*MODO CLARO*/
+body.modoClaro {
+    background-color: rgb(255, 221, 234);
+    color: rgb(102, 15, 102);
+}
+
+body.modoClaro .cuadrado {
+    background-color: rgb(241, 178, 202);
+}
+
+body.modoClaro #boton {
+    background-color: rgb(241, 178, 202);
+    color: white;
+}
+
+
+/*MODO OSCURO*/
+body.modoOscuro {
+    background-color: rgb(76, 23, 87);
+    color: rgb(245, 187, 237);
+}
+
+body.modoOscuro .cuadrado {
+    background-color: rgb(107, 39, 121);
+}
+
+body.modoOscuro #boton {
+    background-color: rgb(107, 39, 121);
+    color: rgb(245, 187, 237);
+}

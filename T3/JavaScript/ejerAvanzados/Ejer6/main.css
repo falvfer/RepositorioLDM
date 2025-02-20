@@ -3,12 +3,16 @@ body {
     font-size: 120%;
 }
 
+p {
+    margin: 0;
+}
+
 input[type="button"] {
-    width: 250px;
-    height: 2.2em;
+    border-radius: 1em;
     border: 1px solid gray;
     background-color: white;
     margin: 0;
+    margin-top: 1em;
 }
 
 input[type="button"]:hover {
@@ -16,22 +20,20 @@ input[type="button"]:hover {
 }
 
 input[type="text"] {
-    width: 90%;
     margin-left: 0.9em;
     margin-right: 0.9em;
-    height: 2em;
 }
 
-div[class="col-3"], div[class="col"], div[class="col-6"] {
-    margin: 0;
-    padding: 0;
-    margin-top: 0.6em;
-    justify-content: center;
-    display: flex;
+input, select {
+    height: 2em;
+    width: 85%;
+    margin-top: 0.5em;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 0.2em;
 }
 
 .container {
-    width: 630px;
+    width: 1000px;
 }
 
 .row {
@@ -41,6 +43,10 @@ div[class="col-3"], div[class="col"], div[class="col-6"] {
 
 .cuadrado {
     background-color: rgb(171, 224, 240);
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
     border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
 }
