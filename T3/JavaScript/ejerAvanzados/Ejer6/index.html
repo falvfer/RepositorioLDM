@@ -11,22 +11,22 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body onload="cargarDOM()">
 
     <div class="container">
         <div class="row g-2">
             <div class="col cuadrado">
                 <h1>Añadir Noticia</h1>
-                <form onsubmit="addNoticia()">
+                <form onsubmit="addNoticia(event)" id="formulario">
                     <input type="text" name="titulo" id="titulo" placeholder="Titulo de la noticia" required>
 
                     <input type="text" name="lugar" id="lugar" placeholder="Lugar" required>
 
                     <input type="date" name="fecha" id="fecha" required> <br/>
 
-                    <select name="sel" id="sel" required>
-                        <option value="cultura">Cultura</option>
-                        <option value="deporte">Deporte</option>
+                    <select name="categoria" id="categoria" required>
+                        <option value="Cultura">Cultura</option>
+                        <option value="Deporte">Deporte</option>
                     </select> <br/>
 
                     <input type="text" name="descripcion" id="descripcion" placeholder="Descripción" required>
@@ -34,8 +34,12 @@
                     <input type="submit" value="Agregar">
                 </form>
             </div>
+
             <div class="col cuadrado">
-                
+                <h1>Lista de Noticias</h1>
+                <div id="noticias">
+                    
+                </div>
             </div>
         </div>
     </div>
