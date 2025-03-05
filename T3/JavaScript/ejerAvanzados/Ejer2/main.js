@@ -3,5 +3,5 @@ function convertir() {
     fahrenheit = document.getElementById("fahrenheit");
 
     if (!isNaN(celcius))
-        fahrenheit.value = (celcius*9/5+32);
+        fahrenheit.value = (celcius*9/5+32) + "ºF";
 }

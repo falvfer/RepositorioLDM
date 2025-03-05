@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(216, 246, 255);
+    font-size: 120%;
+}
+
+p {
+    margin: 0;
+}
+
+input[type="button"] {
+    width: max-content;
+    height: 2.2em;
+    border-radius: 1em;
+    border: 1px solid gray;
+    background-color: white;
+    margin: 0;
+    margin-top: 1em;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(255, 255, 216);
+}
+
+input[type="text"] {
+    width: 200px;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    height: 2em;
+}
+
+.container {
+    width: 630px;
+}
+
+.row {
+    justify-content: center;
+    text-align: center;
+}
+
+.cuadrado {
+    background-color: rgb(171, 224, 240);
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 1em;
+    width: max-content;
+}
