@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen JavaScript</title>
+    <script src="examen.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+        }
+        h2{
+            color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #contenedor {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .caja {
+            display: inline-block;
+            padding: 15px;
+            margin: 5px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+        #zonaCajas{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .resaltado {
+            border: 3px solid red;
+            height: 50px;
+            width: 50px;
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <h2>Examen JavaScript</h2>
+        <button id="crearCaja">Añadir Caja</button>
+        <button id="cambiarColor">Cambiar Color</button>
+        <div id="zonaCajas"></div>
+    </div>
+</body>
+</html>
