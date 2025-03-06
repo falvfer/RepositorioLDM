@@ -77,12 +77,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Fin de Ejercicio 1
 
 
-    // Inicio de Ejercicio 3
-        function cambiarColor() {
+    // Inicio de Ejercicio 3 (Sin el async, es para poder hacer el efecto de barrido en el cambio de color)
+        async function cambiarColor() {
             
             for (let i = 0; i < arrCajas.length; i++) {
                 // arrCajas[i].style = "background-color: " + colores[Number.parseInt(Math.random()*colores.length)] + ";";
                 arrCajas[i].style = "background-color: " + generarColorAleatorio() + ";";
+
+                // Esto no había que hacerlo en el ejercicio, pero queda guapisimo XD
+                await new Promise(resolve => setTimeout(resolve, 50));
             }
             
         }
