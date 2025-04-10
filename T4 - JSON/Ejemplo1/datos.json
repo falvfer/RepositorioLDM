@@ -1,0 +1,6 @@
+{
+    "$schema": "./esquema.json",
+    "nombre": "Juan Pérez",
+    "edad": 18,
+    "email": "correo@correo.es"
+}

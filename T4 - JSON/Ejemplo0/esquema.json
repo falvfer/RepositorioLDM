@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ejemplo esquema",
+    "description": "Esto es un ejemplo del formato de un esquema de un producto",
+    "type": "object",
+    "properties": {
+        "idProducto": {
+            "description": "Identificador único del producto",
+            "type": "integer",
+            "exclusiveMinimum": 0
+        },
+        "productName": {
+            "description": "Nombre del producto",
+            "type": "string"
+        },
+        "price": {
+            "description": "Precio del producto",
+            "type": "number",
+            "exclusiveMinimum": 0
+        },
+        "tags": {
+            "description": "Etiquetas para el producto",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "dimensions": {
+            "type": "object",
+            "properties": {
+                "length": {
+                    "type": "number"
+                },
+                "width": {
+                    "type": "number"
+                },
+                "height": {
+                    "type": "number"
+                }
+            },
+            "required": [ "length", "width", "height" ]
+        },
+        " ubicacióndelalmacén " : {
+            " description " : "Coordenadas del almacén donde se encuentra el producto." ,
+            " $ref " : "https://ejemplo.com/ubicacion-geografica.schema.json"
+        }
+    },
+    "required": [ "productId", "productName", "price" ]
+}
