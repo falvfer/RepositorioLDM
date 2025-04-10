@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "codigos",
+    "type": "object",
+    "properties": {
+        "codigo": {
+            "type": "string",
+            "pattern": "[A-Z]{2}[0-9]{3}[A-Z]{3}"
+        },
+        "sede": {
+            "type": "string",
+            "minimum": 18
+        }
+    }
+}
