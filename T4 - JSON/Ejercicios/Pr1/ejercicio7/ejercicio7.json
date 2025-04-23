@@ -1,0 +1,10 @@
+{
+  "tipo": "fisico",
+  "peso": 2.5,
+  "dimensiones": {
+    "alto": 1,
+    "ancho": 2,
+    "profundidad": 30
+  },
+  "formato": "tapa blanda"
+}

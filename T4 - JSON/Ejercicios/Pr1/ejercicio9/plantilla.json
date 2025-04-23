@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "./ejercicio9.json",
+    "title": "Ejercicio 9",
+    "type": "object",
+    "properties": {
+      "fechas": {
+        "type": "object",
+        "properties": {
+          "fechaInicio": {
+            "type": "string",
+            "format": "date"
+          },
+          "fechaFin": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": ["fechaInicio", "fechaFin"],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "fechaInicio": { "type": "string", "format": "date" },
+                "fechaFin": { "type": "string", "format": "date" }
+              },
+              "required": ["fechaInicio", "fechaFin"]
+            },
+            "then": {
+              "properties": {
+                "fechaInicio": {
+                  "formatMaximum": { "$data": "1/fechaFin" }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+  

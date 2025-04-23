@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "./ejercicio7.json",
+  "title": "Ejercicio 7",
+  "type": "object",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "tipo": {
+          "type": "string",
+          "enum": ["digital"]
+        },
+        "formato": {
+          "type": "string",
+          "enum": ["PDF", "EPUB", "DOCX"]
+        },
+        "tamaño": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        }
+      },
+      "required": ["formato", "tamaño"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "tipo": {
+          "type": "string",
+          "enum": ["fisico"]
+        },
+        "peso": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 80
+        },
+        "dimensiones": {
+          "type": "object",
+          "title": "Dimensiones",
+          "description": "Dimensiones del libro en centímetros",
+          "properties": {
+            "alto": {
+              "type": "number",
+              "minimum": 0.1,
+              "maximum": 100
+            },
+            "ancho": {
+              "type": "number",
+              "minimum": 0.1,
+              "maximum": 100
+            },
+            "profundidad": {
+              "type": "number",
+              "minimum": 0.1,
+              "maximum": 100
+            }
+          }
+        },
+        "formato": {
+          "type": "string",
+          "enum": ["tapa blanda", "tapa dura"]
+        }
+      },
+      "required": ["dimensiones", "peso"]
+    }
+  ]
+}

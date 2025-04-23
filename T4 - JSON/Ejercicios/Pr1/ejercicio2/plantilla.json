@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "./ejercicio2.json",
+  "title": "Ejercicio 2",
+  "type": "object",
+  "properties": {
+    "productos": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "cantidad": {
+            "description": "Cantidad del producto",
+            "type": "integer",
+            "minimum": 1
+          },
+          "unidad": {
+            "description": "Unidades en stock",
+            "type": "string",
+            "enum": ["cajas", "pales"]
+          }
+        }
+      }
+    }
+  }
+}

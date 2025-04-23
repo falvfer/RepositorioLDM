@@ -1,0 +1,12 @@
+{
+  "clientes": [
+    {
+      "codigo": "AAA222",
+      "habitual": true,
+      "cantidad": 500
+    },
+    {
+      "codigo": "BBB333"
+    }
+  ]
+}

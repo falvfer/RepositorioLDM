@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "./ejercicio8.json",
+  "title": "Ejercicio 8",
+  "type": "object",
+  "anyOf": [
+    {
+      "type": "object",
+      "properties": {
+        "correoElectronico": {
+          "type": "string",
+          "format": "email"
+        }
+      },
+      "required": ["correoElectronico"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "usuario": {
+          "type": "string"
+        },
+        "telefono": {
+          "type": "string",
+          "format": "phone"
+        }
+      },
+      "required": ["usuario", "telefono"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "correoElectronico": {
+          "type": "string",
+          "format": "email"
+        },
+        "usuario": {
+          "type": "string"
+        },
+        "telefono": {
+          "type": "string",
+          "format": "phone"
+        }
+      },
+      "required": ["correoElectronico", "usuario", "telefono"]
+    }
+  ]
+}

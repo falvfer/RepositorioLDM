@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "./ejercicio6.json",
+  "title": "Ejercicio 6",
+  "type": "object",
+  "allOf": [
+    {
+      "type": "object",
+      "properties": {
+        "nombre": {
+          "type": "string",
+          "minLength": 1
+        },
+        "edad": {
+          "type": "integer",
+          "minimum": 18
+        }
+      },
+      "required": ["nombre", "edad"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "cargo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "salario": {
+          "type": "number",
+          "minimum": 1000
+        }
+      },
+      "required": ["cargo", "salario"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "productos": [
+    {
+      "cantidad": 10,
+      "unidad": "cajas"
+    },
+    {
+      "cantidad": 5,
+      "unidad": "pales"
+    }
+  ]
+}
