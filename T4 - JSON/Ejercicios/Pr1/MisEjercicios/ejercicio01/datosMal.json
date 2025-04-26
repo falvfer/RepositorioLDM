@@ -1,0 +1,7 @@
+{
+    "$schema": "./esquema.json",
+    "codigos": [
+        { "codigo": "A12XYZ", "sede": 123 },
+        { "codigo": "XX123", "sede": "Valencia" }
+    ]
+}

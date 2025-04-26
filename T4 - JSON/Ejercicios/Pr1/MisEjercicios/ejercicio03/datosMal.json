@@ -1,0 +1,10 @@
+{
+    "$schema": "./esquema.json",
+    "clientes": [
+        {
+            "codigo": "A22",
+            "habitual": "yes",
+            "cantidad": 1500
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "$schema": "./esquema.json",
+    "tipo": "digital",
+    "formato": "PDF",
+    "tamaño": 5
+}

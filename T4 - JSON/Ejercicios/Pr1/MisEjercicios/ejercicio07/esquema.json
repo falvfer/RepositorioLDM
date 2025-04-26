@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ejercicio 7",
+    "type": "object",
+    "oneOf": [
+        {
+            "properties": {
+                "$schema": {
+                    "description": "Dirección del esquema que usar para validar los datos",
+                    "type": "string"
+                },
+                "tipo": {
+                    "type": "string",
+                    "const": "fisico"
+                },
+                "peso": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                },
+                "dimensiones": {
+                    "type": "string",
+                    "pattern": "^[0-9]{1,3}x[0-9]{1,3}x[0-9]{1,3} cm$"
+                }
+            },
+            "additionalProperties": false
+        },
+        {
+            "properties": {
+                "$schema": {
+                    "description": "Dirección del esquema que usar para validar los datos",
+                    "type": "string"
+                },
+                "tipo": {
+                    "type": "string",
+                    "const": "digital"
+                },
+                "formato": {
+                    "type": "string",
+                    "enum": [
+                        "PDF",
+                        "EXE",
+                        "MP3",
+                        "MP4",
+                        "PNG",
+                        "JPG"
+                    ]
+                },
+                "tamaño": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                }
+            },
+            "additionalProperties": false
+        }
+    ]
+}

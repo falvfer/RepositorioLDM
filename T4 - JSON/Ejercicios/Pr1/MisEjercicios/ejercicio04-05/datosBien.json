@@ -1,0 +1,14 @@
+{
+    "$schema": "./esquema.json",
+    "listaClientes": [
+        {
+            "cif": "12345678A",
+            "nombre": "Empresa X"
+        },
+        {
+            "cif": "01234567B",
+            "nombre": "Empresa Y",
+            "diasentrega": 5
+        }
+    ]
+}

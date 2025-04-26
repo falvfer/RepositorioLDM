@@ -1,0 +1,7 @@
+{
+    "$schema": "./esquema.json",
+    "tipo": "fisico",
+    "peso": 2.5,
+    "dimensiones": "30x20x10 cm",
+    "formato": "MP3"
+}

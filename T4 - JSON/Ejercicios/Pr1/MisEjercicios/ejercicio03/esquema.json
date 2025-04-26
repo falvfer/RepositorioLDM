@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ejercicio 3",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "clientes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "codigo": {
+                        "description": "Codigo del cliente",
+                        "type": "string",
+                        "pattern": "^[A-Z]{3}[0-9]{3}$",
+                        "uniqueItems": true
+                    },
+                    "habitual": {
+                        "description": "Cliente habitual o no habitual",
+                        "type": "boolean"
+                    },
+                    "cantidad": {
+                        "description": "Cantidad de productos comprados",
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 1000
+                    }
+                }
+            },
+            "required": ["codigo"]
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,7 @@
+{
+    "$schema": "./esquema.json",
+    "nombre": "Laura Pérez",
+    "edad": 17,
+    "cargo": "Diseñadora",
+    "salario": 2500
+}

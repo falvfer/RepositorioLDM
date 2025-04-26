@@ -1,0 +1,9 @@
+{
+    "$schema": "./esquema.json",
+    "productos": [
+        {
+            "cantidad": -2,
+            "unidad": "bolsas"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ejercicio 6",
+    "type": "object",
+    "allOf": [
+        {
+            "properties": {
+                "$schema": {
+                    "type": "string"
+                }
+            }
+        },
+        {
+            "properties": {
+                "nombre": {
+                    "type": "string"
+                },
+                "edad": {
+                    "type": "integer",
+                    "minimum": 18
+                }
+            },
+            "required": ["nombre","edad"]
+        },
+        {
+            "properties": {
+                "cargo": {
+                    "type": "string",
+                    "enum": [
+                        "Desarrollador", "Diseñador", "Programador", "Limpiador"
+                    ]
+                },
+                "salario": {
+                    "type": "integer",
+                    "minimum": 1000
+                }
+            },
+            "required": ["cargo","salario"]
+        }
+    ]
+}
