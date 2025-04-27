@@ -2,11 +2,39 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Ejercicio 8",
     "type": "object",
-    "properties": {
-        "$schema": {
-            "description": "Dirección del esquema que usar para validar los datos",
-            "type": "string"
+    "anyOf": [
+        {
+            "properties": {
+                "$schema": {
+                    "description": "Dirección del esquema que usar para validar los datos",
+                    "type": "string"
+                },
+                "correo": {
+                    "type": "string",
+                    "pattern": "^[a-z.]{6,}@[a-z]{3,}.[a-z]{3,}$"
+                }
+            },
+            "required": ["correo"],
+            "additionalProperties": false
+        },
+        {
+            "properties": {
+                "$schema": {
+                    "description": "Dirección del esquema que usar para validar los datos",
+                    "type": "string"
+                },
+                "usuario": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]{3,}$"
+                },
+                "telefono": {
+                    "type": "string",
+                    "minLength": 9,
+                    "maxLength": 9
+                }
+            },
+            "required": ["usuario", "telefono"],
+            "additionalProperties": false
         }
-    },
-    "additionalProperties": false
+    ]
 }

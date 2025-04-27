@@ -6,7 +6,16 @@
         "$schema": {
             "description": "Dirección del esquema que usar para validar los datos",
             "type": "string"
+        },
+        "fechaIni": {
+            "type": "string",
+            "format": "date"
+        },
+        "fechaFin": {
+            "type": "string",
+            "format": "date"
         }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": ["fechaIni", "fechaFin"]
 }

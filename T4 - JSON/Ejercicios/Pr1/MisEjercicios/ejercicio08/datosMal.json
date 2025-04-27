@@ -1,3 +1,4 @@
 {
-    "$schema": "./esquema.json"
+    "$schema": "./esquema.json",
+    "usuario": "Mario"
 }
