@@ -1,4 +1,4 @@
-const Ajv = require("ajv");
+import Ajv from 'ajv';
 const evento1 = {
     "$schema": "./esquema.json",
     "fechaIni": "2025-04-12",
