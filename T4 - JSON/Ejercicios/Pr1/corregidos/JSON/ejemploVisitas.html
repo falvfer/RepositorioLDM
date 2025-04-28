@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Practica en Json</title>
+    </head>
+    <body>
+        <h1>Bienvenido Usuario</h1>
+        <p>Hoy es: <span id="spanFecha"></span>.</p>
+        <br/>
+        <p>La fecha de su último ingreso fue: <span id="ultimaVisita"></span></p>
+        <br/>
+        <p>Número de visita: <span id="numeroVisita"></span></p>
+        <script>
+            
+            document.getElementById('spanFecha').innerHTML = Date();
+            //para comenzar incializamos las visitas a 0
+            var vecesVisitado = 0;
+           
+            //y la ultima fecha como nunca
+            var fechaUltimaVisita = 'nunca';
+            
+            //Luego veremos si ha habido visitas del usuario ya, para eso usamos la variable localStorage
+            if(localStorage.ultimaVisita){
+              
+                //si hay algo, lo parseamos desde Json
+                var ultimaVisita = JSON.parse(localStorage.ultimaVisita);
+               
+                //luego seteamos numero de visitas y fecha
+                vecesVisitado = ultimaVisita.numeroVisitas;
+
+                fechaUltimaVisita = ultimaVisita.date;
+            }
+           
+            //lo escribimos en pantalla
+            document.getElementById('ultimaVisita').innerHTML = fechaUltimaVisita;
+            
+            //antes de mostrar la cantidad de visitas la aumentamos en 1
+            vecesVisitado++;
+
+            document.getElementById('numeroVisita').innerHTML = vecesVisitado;
+
+            //primero, creamos un objeto llamado miUltimaVisita que guarda la fecha y las visitas
+            var miUltimaVisita = { };
+            
+            miUltimaVisita.date = new Date();
+            
+            miUltimaVisita.numeroVisitas = vecesVisitado;
+
+            //y por ultimo lo guardadmos en localStorage para ello usaremos la función stringify
+            localStorage.ultimaVisita = JSON.stringify(miUltimaVisita);
+        </script>
+    </body>
+</html>

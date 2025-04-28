@@ -1,26 +1,66 @@
-import Ajv from 'ajv';
-const evento1 = {
-    "$schema": "./esquema.json",
-    "fechaIni": "2025-04-12",
-    "fechaFin": "2025-04-13"
-}
-const evento2 = {
-    "$schema": "./esquema.json",
-    "fechaIni": "2025-04-12",
-    "fechaFin": "2025-04-11"
+async function validarDatosBien() {
+    try {
+        // Cargar el parrafo con id resultado
+        const resultado = document.getElementById("resultado");
+
+        // Cargar JSON Schema
+        const schemaResponse = await fetch("esquema.json");
+        const schema = await schemaResponse.json();
+        
+        // Instanciar AJV
+        const ajv = new Ajv();
+
+        // Cargar datos
+        const datosBien = await fetch("datosBien.json");
+        const datos = await datosBien.json();
+
+        // Compilar y validar
+        const validar = ajv.compile(schema);
+        const valido = validar(datos);
+
+        // Mostrar resultado
+        if (valido && datos.fechaIni <= datos.fechaFin) {
+            resultado.innerHTML = "JSON Correcto: Fecha correcta";
+        } else {
+            resultado.innerHTML = "JSON Incorrecto: Fecha incorrecta";
+            if (!valido)
+                resultado.innerHTML += ", errores: " + JSON.stringify(validar.errors, null, 2);
+        }
+    } catch (error) {
+        console.log("Error cargando los archivos:" + error);
+        resultado.innerHTML = "Error cargando los archivos:" + error;
+    }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    
-    if (evento1.fechaIni >= evento1.fechaFin) {
-        console.log("El evento 1 es incorrecto.");
-    } else {
-        console.log("El evento 1 es correcto.");
+async function validarDatosMal() {
+    try {
+        // Cargar el parrafo con id resultado
+        const resultado = document.getElementById("resultado");
+
+        // Cargar JSON Schema
+        const schemaResponse = await fetch("esquema.json");
+        const schema = await schemaResponse.json();
+        
+        // Instanciar AJV
+        const ajv = new Ajv();
+
+        // Cargar datos
+        const datosMal = await fetch("datosMal.json");
+        const datos = await datosMal.json();
+
+        // Compilar y validar
+        const validar = ajv.compile(schema);
+        const valido = validar(datos);
+
+        // Mostrar resultado
+        if (valido && datos.fechaIni <= datos.fechaFin) {
+            resultado.innerHTML = "JSON Correcto: Fecha correcta";
+        } else {
+            resultado.innerHTML = "JSON Incorrecto: Fecha incorrecta";
+            if (!valido)
+                resultado.innerHTML += ", errores: " + JSON.stringify(validar.errors, null, 2);
+        }
+    } catch (error) {
+        resultado.innerHTML = "Error cargando los archivos:" + error;
     }
-    
-    if (evento2.fechaIni >= evento2.fechaFin) {
-        console.log("El evento 2 es incorrecto.");
-    } else {
-        console.log("El evento 2 es correcto.");
-    }
-})
+}

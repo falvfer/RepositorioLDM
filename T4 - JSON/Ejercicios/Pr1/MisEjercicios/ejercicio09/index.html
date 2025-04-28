@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Francisco Jesús Álvarez Fernández">
     <title>Titulo</title>
-    <script type="module" src="fechaMayor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ajv/6.12.6/ajv.min.js"></script>
+    <script src="fechaMayor.js" defer></script>
 </head>
 <body>
 
-    
+    <p>
+        <input type="button" value="Validar datosBien" onclick="validarDatosBien()">
+        <input type="button" value="Validar datosMal" onclick="validarDatosMal()">
+    </p>
+    <p id="resultado">
+
+    </p>
+
 
 </body>
 </html>
