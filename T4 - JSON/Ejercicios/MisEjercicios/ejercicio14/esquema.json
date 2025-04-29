@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ejercicio 14",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "description": "Dirección del esquema que usar para validar los datos",
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

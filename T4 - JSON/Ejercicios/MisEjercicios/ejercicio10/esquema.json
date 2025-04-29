@@ -6,6 +6,36 @@
         "$schema": {
             "description": "Dirección del esquema que usar para validar los datos",
             "type": "string"
+        },
+        "tipo": {
+            "type": "string",
+            "enum": ["adulto", "menor"]
+        },
+        "edad": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 120
+        }
+    },
+    "if": {
+        "properties": {
+            "tipo": {
+                "const": "adulto"
+            }
+        }
+    },
+    "then": {
+        "properties": {
+            "edad": {
+                "minimum": 18
+            }
+        }
+    },
+    "else": {
+        "properties": {
+            "edad": {
+                "maximum": 17
+            }
         }
     },
     "additionalProperties": false
