@@ -6,7 +6,40 @@
         "$schema": {
             "description": "Dirección del esquema que usar para validar los datos",
             "type": "string"
+        },
+        "metodo": {
+            "type": "string",
+            "enum": ["tarjeta", "paypal"]
         }
     },
-    "additionalProperties": false
+    "required": ["metodo"],
+    "if": {
+        "properties": { "metodo": { "const": "tarjeta" } }
+    },
+    "then": {
+        "properties": {
+            "$schema": {}, "metodo": {},
+            "nTarjeta": {
+                "type": "string",
+                "pattern": "^[0-9]{16}$"
+            },
+            "cvv": {
+                "type": "string",
+                "pattern": "^[0-9]{3}$"
+            }
+        },
+        "required": ["nTarjeta", "cvv"],
+        "additionalProperties": false
+    },
+    "else": {
+        "properties": {
+            "$schema": {}, "metodo": {},
+            "correo": {
+                "type": "string",
+                "pattern": "^[a-z.]{6,}@[a-z]{3,}.[a-z]{3,}$"
+            }
+        },
+        "required": ["correo"],
+        "additionalProperties": false
+    }
 }

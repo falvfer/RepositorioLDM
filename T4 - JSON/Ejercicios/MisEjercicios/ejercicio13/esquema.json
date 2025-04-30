@@ -4,8 +4,13 @@
     "type": "object",
     "properties": {
         "$schema": {
-            "description": "Dirección del esquema que usar para validar los datos",
             "type": "string"
+        },
+        "codigos": {
+            "type": "object",
+            "propertyNames": {
+                "pattern": "^[A-Z][A-Z0-9]{3,}$"
+            }
         }
     },
     "additionalProperties": false

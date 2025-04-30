@@ -6,7 +6,22 @@
         "$schema": {
             "description": "Dirección del esquema que usar para validar los datos",
             "type": "string"
+        },
+        "usuario": {
+            "type": "string",
+            "pattern": "^[a-z]{3,}$"
+        },
+        "direccion": {
+            "type": "string"
+        },
+        "codigoPostal": {
+            "type": "string",
+            "pattern": "^[0-9]{5}$"
         }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": ["usuario"],
+    "dependentRequired": {
+        "direccion": ["codigoPostal"]
+    }
 }

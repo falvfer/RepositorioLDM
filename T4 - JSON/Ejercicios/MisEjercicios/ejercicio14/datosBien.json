@@ -1,3 +1,8 @@
 {
-    "$schema": "./esquema.json"
+    "$schema": "./esquema.json",
+    "telefonos": {
+        "tel_casa": "123456789",
+        "tel_dormitorio": "654321987",
+        "tel_hijo": "123456789012"
+    }
 }

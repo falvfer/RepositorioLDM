@@ -1,3 +1,6 @@
 {
-    "$schema": "./esquema.json"
+    "$schema": "./esquema.json",
+    "metodo": "tarjeta",
+    "nTarjeta": "1234567890123456",
+    "cvv": "123"
 }

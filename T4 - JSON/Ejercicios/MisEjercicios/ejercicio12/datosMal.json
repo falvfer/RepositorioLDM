@@ -1,3 +1,5 @@
 {
-    "$schema": "./esquema.json"
+    "$schema": "./esquema.json",
+    "usuario": "paco",
+    "direccion": "C/ Huelva Nº 12"
 }

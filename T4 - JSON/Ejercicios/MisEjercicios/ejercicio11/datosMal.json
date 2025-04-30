@@ -1,3 +1,6 @@
 {
-    "$schema": "./esquema.json"
+    "$schema": "./esquema.json",
+    "metodo": "paypal",
+    "correo": "asdasd@asd.sad",
+    "cvv": "123"
 }
