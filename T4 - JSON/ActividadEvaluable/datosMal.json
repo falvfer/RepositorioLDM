@@ -1,0 +1,47 @@
+{
+    "fechaGeneracion": "2025-04-30",
+    "articulos": [
+        {
+            "tipo": "monitor",
+            "codigo": "MON-ERR-001",
+            "descripcion": "Monitor sin resolución obligatoria"
+        },
+        {
+            "tipo": "raton",
+            "codigo": "RAT-ERR-002",
+            "descripcion": "Ratón con resolución no permitida",
+            "peso": 100,
+            "unidad": "g",
+            "resolucion": {
+                "ancho": 800,
+                "alto": 600
+            }
+        },
+        {
+            "tipo": "monitor",
+            "codigo": "MON-ERR-003",
+            "descripcion": "Monitor con campos de ratón",
+            "resolucion": {
+                "ancho": 2560,
+                "alto": 1440
+            },
+            "peso": 200,
+            "unidad": "g"
+        },
+        {
+            "tipo": "raton",
+            "codigo": "RAT-ERR-004",
+            "descripcion": "Ratón sin unidad",
+            "peso": 90
+        },
+        {
+            "tipo": "teclado",
+            "codigo": "TEC-ERR-005",
+            "descripcion": "Teclado con resolución inválida",
+            "resolucion": {
+                "ancho": 800,
+                "alto": 600
+            }
+        }
+    ]
+}

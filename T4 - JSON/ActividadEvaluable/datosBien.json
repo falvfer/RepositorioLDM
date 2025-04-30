@@ -1,0 +1,41 @@
+{
+    "fechaGeneracion": "2025-04-30",
+    "articulos": [
+        {
+            "tipo": "monitor",
+            "codigo": "MON-FHD-001",
+            "descripcion": "Monitor Full HD 24 pulgadas",
+            "resolucion": {
+                "ancho": 1920,
+                "alto": 1080
+            }
+        },
+        {
+            "tipo": "raton",
+            "codigo": "RAT-LIG-002",
+            "descripcion": "Ratón óptico ultraligero",
+            "peso": 85,
+            "unidad": "cg"
+        },
+        {
+            "tipo": "monitor",
+            "descripcion": "Monitor 4K UHD 27 pulgadas",
+            "resolucion": {
+                "ancho": 3840,
+                "alto": 2160
+            }
+        },
+        {
+            "tipo": "teclado",
+            "codigo": "TEC-MEC-003",
+            "descripcion": "Teclado mecánico con retroiluminación RGB"
+        },
+        {
+            "tipo": "raton",
+            "codigo": "RAT-PRE-004",
+            "descripcion": "Ratón de precisión profesional",
+            "peso": 130,
+            "unidad": "g"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["datos*.json"],
+            "url": "./esquema.json"
+        }
+    ],
+    "workbench.colorCustomizations": {
+        "tab.activeBorderTop": "#FA9E9E"
+    }
+}

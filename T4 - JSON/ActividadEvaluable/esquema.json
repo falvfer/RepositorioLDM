@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Actividad evaluable",
+    "type": "object",
+    "properties": {
+        "fechaGeneracion": {
+            "type": "string",
+            "format": "date"
+        },
+        "articulos": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "anyOf": [
+                    {
+                        "properties": {
+                            "tipo": {
+                                "type": "string",
+                                "const": "monitor"
+                            },
+                            "codigo": {
+                                "type": "string",
+                                "pattern": "^[A-Z]{3}-[A-Z]{3}-[0-9]{3}$"
+                            },
+                            "descripcion": {
+                                "type": "string"
+                            },
+                            "resolucion": {
+                                "type": "object",
+                                "properties": {
+                                    "ancho": {
+                                        "type": "integer",
+                                        "minimum": 0
+                                    },
+                                    "alto": {
+                                        "type": "integer",
+                                        "minimum": 0
+                                    }
+                                },
+                                "required": ["ancho", "alto"]
+                            }
+                        },
+                        "required": ["tipo", "resolucion"],
+                        "dependentRequired": {
+                            "codigo": "descripcion"
+                        },
+                        "additionalProperties": false
+                    },
+                    {
+                        "properties": {
+                            "tipo": {
+                                "type": "string",
+                                "const": "teclado"
+                            },
+                            "codigo": {
+                                "type": "string",
+                                "pattern": "^[A-Z]{3}-[A-Z]{3}-[0-9]{3}$"
+                            },
+                            "descripcion": {
+                                "type": "string"
+                            }
+                        },
+                        "required": ["tipo"],
+                        "dependentRequired": {
+                            "codigo": "descripcion"
+                        },
+                        "additionalProperties": false
+                    },
+                    {
+                        "properties": {
+                            "tipo": {
+                                "type": "string",
+                                "const": "raton"
+                            },
+                            "codigo": {
+                                "type": "string",
+                                "pattern": "^[A-Z]{3}-[A-Z]{3}-[0-9]{3}$"
+                            },
+                            "descripcion": {
+                                "type": "string"
+                            },
+                            "peso": {
+                                "type": "integer",
+                                "minimum": 0
+                            },
+                            "unidad": {
+                                "type": "string",
+                                "enum": ["g", "cg"]
+                            }
+                        },
+                        "required": ["tipo", "peso", "unidad"],
+                        "dependentRequired": {
+                            "codigo": "descripcion"
+                        },
+                        "additionalProperties": false
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": false
+}
