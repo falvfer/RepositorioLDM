@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visualizador de JSON local</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      select,
+      button {
+        margin-top: 10px;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #eee;
+      }
+
+      pre {
+        background: #f4f4f4;
+        padding: 10px;
+        overflow-x: auto;
+      }
+
+      ul,
+      ol {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Visualizador de JSON desde archivo local</h2>
+
+    <!-- Selector para elegir el modo de visualización -->
+    <label for="modoVisualizacion">Ver como:</label>
+    <select id="modoVisualizacion">
+      <option value="pre">Bloque &lt;pre&gt;</option>
+      <option value="table">Tabla</option>
+      <option value="list">Lista</option>
+      <option value="minified">JSON Plano (minificado)</option>
+      <option value="keys">Solo Claves</option>
+      <option value="values">Solo Valores</option>
+      <option value="colored">JSON Coloreado</option>
+    </select>
+    <!-- Botón para cargar el archivo JSON -->
+    <button onclick="cargarJSON()">Cargar JSON</button>
+
+    <div id="contenedorSalida"></div>
+
+    <!-- Contenedor donde se mostrará la salida -->
+    <div id="contenedorSalida"></div>
+
+    <!-- Vinculación al archivo JavaScript externo -->
+    <script src="visualizador.js"></script>
+  </body>
+</html>
