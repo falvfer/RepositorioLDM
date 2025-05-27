@@ -1,0 +1,14 @@
+- nombre: Marta
+  edad: 28
+  ciudad: Madrid
+  habilidades:
+    - HTML
+    - CSS
+    - JavaScript
+- nombre: Pablo
+  edad: 33
+  ciudad: Sevilla
+  habilidades:
+    - Python
+    - Flask
+    - SQLite

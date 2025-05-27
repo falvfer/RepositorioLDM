@@ -1,0 +1,6 @@
+[
+  { "nombre": "Ana", "curso": "SMR", "nota": 8.5, "email": "ana@email.com" },
+  { "nombre": "Luis", "curso": "DAW", "nota": 6.2, "email": "luis@email.com" },
+  { "nombre": "Laura", "curso": "DAW", "nota": 9.1, "email": "laura@email.com" },
+  { "nombre": "Carlos", "curso": "DAM", "nota": 4.9, "email": "carlos@email.com" }
+]

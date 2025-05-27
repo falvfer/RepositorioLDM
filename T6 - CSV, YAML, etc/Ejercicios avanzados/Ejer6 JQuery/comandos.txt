@@ -1,0 +1,11 @@
+Mostrar todos los nombres
+	jq '.[].nombre' eje6_alumnos.json
+
+Filtrar solo los alumnos de DAW
+	jq '.[] | select(.curso == "DAW")' eje6_alumnos.json
+
+Extraer nombre y nota de los que tienen nota > 7
+	jq '.[] | select(.nota > 7) | {nombre, nota}' eje6_alumnos.json
+
+Generar una lista CSV con nombre y nota
+	jq -r '.[] | [.nombre, .nota] | @csv' eje6_alumnos.json

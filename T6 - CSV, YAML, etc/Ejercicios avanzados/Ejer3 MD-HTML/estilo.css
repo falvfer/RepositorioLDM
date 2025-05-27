@@ -1,0 +1,25 @@
+h1 {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+li {
+    margin-left: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+#contenido {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 700px;
+    margin: 0 auto;
+}

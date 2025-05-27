@@ -1,0 +1,21 @@
+<curso>
+  <titulo>Desarrollo Web</titulo>
+  <codigo>DAW001</codigo>
+  <horas>200</horas>
+  <modalidad>Presencial</modalidad>
+  <modulos>
+    <modulo>
+      <nombre>HTML y CSS</nombre>
+      <horas>60</horas>
+    </modulo>
+    <modulo>
+      <nombre>JavaScript</nombre>
+      <horas>70</horas>
+    </modulo>
+    <modulo>
+      <nombre>Despliegue</nombre>
+      <horas>70</horas>
+    </modulo>
+  </modulos>
+  <activo>true</activo>
+</curso>

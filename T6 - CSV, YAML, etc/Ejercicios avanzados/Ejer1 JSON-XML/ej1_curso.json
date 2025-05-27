@@ -1,0 +1,14 @@
+{
+  "curso": {
+    "titulo": "Desarrollo Web",
+    "codigo": "DAW001",
+    "horas": 200,
+    "modalidad": "Presencial",
+    "modulos": [
+      { "nombre": "HTML y CSS", "horas": 60 },
+      { "nombre": "JavaScript", "horas": 70 },
+      { "nombre": "Despliegue", "horas": 70 }
+    ],
+    "activo": true
+  }
+}
