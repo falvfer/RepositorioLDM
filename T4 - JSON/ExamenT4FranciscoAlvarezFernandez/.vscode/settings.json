@@ -1,0 +1,9 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["datos*.json"],
+            "url": "./examen-esquema.json"
+        }
+    ],
+    "workbench.colorCustomizations": {}
+}

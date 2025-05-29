@@ -1,0 +1,16 @@
+{
+    "productosFinancieros": [
+        {"tipo":"bono", "beneficio":"3.52"},
+        {"tipo":"bono", "beneficio":"3.52", "valorActual":1.1, "moneda":"dolares"},
+        {"tipo":"bono", "beneficio":"3.52", "valorActual":-1, "moneda":"euros"},
+        {"tipo":"bono", "beneficio":"3.52", "valorActual":-23.34, "moneda":"yenes"},
+        {"tipo":"futuro", "beneficio":"-7.45", "elemento":"asdasdasd", "idioma":"inglés"},
+        {"tipo":"futuro", "beneficio":"-4.46", "elemento":"asda23asd", "idioma":"español"},
+        {"tipo":"futuro", "beneficio":"-1.06", "elemento":"a123asd", "idioma":"francés"},
+        {"tipo":"futuro", "beneficio":"-7.40", "elemento":"asdasd53d", "idioma":"alemán"},
+        {"tipo":"acciones", "beneficio":"13.10", "empresa":"Empresa 1", "pais":"USA"},
+        {"tipo":"acciones", "beneficio":"13.10", "empresa":"Empresa 2", "pais":"Alemania"},
+        {"tipo":"acciones", "beneficio":"13.10", "empresa":"Empresa 3", "pais":"Japón"},
+        {"tipo":"acciones", "beneficio":"13.10", "empresa":"Empresa 4", "pais":"España"}
+    ]
+}
