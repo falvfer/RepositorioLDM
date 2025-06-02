@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Examen Tema 4",
+    "type": "object",
+    "properties": {
+        "productosFinancieros": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tipo": {
+                        "type": "string"
+                    },
+                    "beneficio": {
+                        "type": "string",
+                        "pattern": "^-?[0-9]*\\.[0-9]{2}$"
+                    }
+                },
+                "required": ["tipo", "beneficio"],
+                "oneOf": [
+                    {
+                        "properties": {
+                            "tipo": {
+                                "const": "bono"
+                            },
+                            "beneficio":{},
+                            "valorActual": {
+                                "type":"number"
+                            },
+                            "moneda": {
+                                "type":"string",
+                                "enum": ["dolares","euros","yenes"]
+                            }
+                        },
+                        "additionalProperties": false,
+                        "dependentRequired": {
+                            "valorActual": "moneda"
+                        }
+                    },
+                    {
+                        "properties": {
+                            "tipo": {
+                                "const": "futuro"
+                            },
+                            "beneficio":{},
+                            "elemento": {
+                                "type":"string"
+                            },
+                            "idioma": {
+                                "type":"string",
+                                "enum": ["inglés","español","francés","alemán"]
+                            }
+                        },
+                        "required": ["elemento", "idioma"],
+                        "additionalProperties": false
+                    },
+                    {
+                        "properties": {
+                            "tipo": {
+                                "const": "acciones"
+                            },
+                            "beneficio":{},
+                            "empresa": {
+                                "type":"string"
+                            },
+                            "pais": {
+                                "type":"string",
+                                "enum": ["USA", "Alemania", "Japón", "España"]
+                            }
+                        },
+                        "required": ["empresa", "pais"],
+                        "additionalProperties": false
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": false
+}
